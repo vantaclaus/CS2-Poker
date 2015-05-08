@@ -21,14 +21,14 @@ public class Hand implements Comparable {
 
    /*
    BEST
-   Royal Flush
-   Straight Flush
+   Royal Flush = Straight+Flush+All greater than 10
+   Straight Flush = Straight+Flush
    Four of a Kind
-   Full House
+   Full House = Three+Two
    Flush
    Straight
    Three of a Kind
-   Two Pair
+   Two Pair = Pair+Pair!Four
    One Pair
    High Card
    WORST
@@ -40,6 +40,7 @@ public class Hand implements Comparable {
    public int compareTo(Object x){
       Hand other = (Hand)x;
       //TODO: Compare hands by ordering above; return -1, 1, or 0
+
       return 0;
    }
 }
